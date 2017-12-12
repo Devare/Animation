@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    tools:context="mx.com.devare.animation.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_frame_animation"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/iv_descripcion"
+            android:paddingTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtn_iniciar_frame_animation"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/iv_descripcion"
+                app:srcCompat="@drawable/ic_play" />
+
+            <ImageButton
+                android:id="@+id/ibtn_parar_frame_animation"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/iv_descripcion"
+                app:srcCompat="@drawable/ic_stop" />
+
+            <Button
+                android:id="@+id/btn_iniciar_tween_animation"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/iv_descripcion"
+                android:text="@string/ibtn_label_tween"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_iniciarEjemplo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bk_boton_selector"
+            android:text="@string/btn_label_iniciar_ejemplo" />
+
+        <Button
+            android:id="@+id/btn_init_extras_tween"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bk_boton_selector"
+            android:text="Animaciones Tween" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Animaciones con imagenes Gif"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_gif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/iv_descripcion"
+                app:srcCompat="@drawable/ic_imagen" />
+
+            <ImageView
+                android:id="@+id/iv_gif_dos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/iv_descripcion"
+                app:srcCompat="@drawable/ic_imagen" />
+
+            <ImageView
+                android:id="@+id/iv_gif_tres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/iv_descripcion"
+                app:srcCompat="@drawable/ic_imagen" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
